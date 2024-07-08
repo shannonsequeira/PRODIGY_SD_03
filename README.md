@@ -20,4 +20,14 @@ This project aims to create a user-friendly application for managing contact inf
 
 ### Visualization
 
-### Deployment
+![Visualization 1](images/mobile1.png)
+
+![Visualization 2](images/mobile2.png)
+
+![Visualization 2](images/mobile3.png)
+
+![Visualization 1](images/desktop1.png)
+
+![Visualization 2](images/desktop2.png)
+
+![Visualization 2](images/desktop3.png)
