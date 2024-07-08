@@ -1,0 +1,100 @@
+body {
+    background-color: #f8f9fa; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to top, #317563, #99f2c8);
+    background-size: cover;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center; /* Center align the text */
+    margin-top: 0; /* Remove default margin */
+}
+
+.container {
+    background: linear-gradient(to bottom, #dad9d9, #f0eeee);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(to bottom, #4fc1ee, #02919b);
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9; /* Darker shade on hover */
+    border-color: #0062cc;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    border-radius: 15px;
+}
+
+/* Contact Cards in Mobile, Tablet, and Desktop View */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute cards evenly */
+}
+
+.card {
+    flex: 1 0 calc(50% - 20px); /* Two cards per row, with margin */
+    margin-bottom: 20px;
+    background-color: #edf4fc; /* Light gray background for cards */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.card-body {
+    padding: 15px; /* Padding for card body */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Larger font size for title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+    background-color: #0aaa8f; /* Primary color background for title */
+    color: #ffffff; /* Text color */
+    padding: 10px; /* Padding for title */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Align buttons to right */
+    align-items: center; /* Center items vertically */
+}
+
+.card-text {
+    font-size: 1rem; /* Normal font size for text */
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 calc(100% - 20px); /* Full width for each card on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-deck {
+        flex-direction: column;
+    }
+}
